@@ -1,0 +1,98 @@
+
+body {
+    width: 115%;
+    max-width: 1400px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.nav-menu {
+    display: flex; 
+    gap: 20px; 
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.nav-menu2 {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 20px;
+}
+
+.nav-menu2 img {
+    grid-column: 1;
+    margin-right: 20px;
+}
+
+.nav-menu li,
+.nav-menu2 li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.min-side-button {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 8px 15px; 
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    color: #0077b6; 
+    border: 2px solid #0077b6; 
+    border-radius: 25px; 
+    background-color: transparent; 
+    font-weight: 500; 
+    cursor: pointer; 
+    gap: 8px; 
+    transition: all 0.3s ease; 
+}
+
+.opprettkonto {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 8px 15px; 
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    color: #0077b6; 
+    border: 2px solid #0077b6; 
+    border-radius: 25px; 
+    background-color: transparent; 
+    font-weight: 500; 
+    cursor: pointer; 
+    gap: 8px; 
+    transition: all 0.3s ease; 
+}
+
+.banner {
+    background-position: center; 
+    height: 100%; 
+    width: 100%;
+}
+
+.beach img {
+    width: 100%; 
+    max-width: 1400px; 
+}
