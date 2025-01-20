@@ -14,37 +14,100 @@
     
         <nav>
             <ul class="nav-menu">
+                <li><a href="#"></a></li>
                 <li>
-                <form class="search-bar">
-                    <i class="fas fa-search"></i>
-                </form>
+                    <form class="search-bar">
+                        <i class="fas fa-search"></i>
+                    </form>
                 </li>
-                <li class="opprettkonto"><a href="#" text-decoration: none;>Opprett en konto</a></li>
-                <button class="min-side-button">
-                    <span class="icon">
-                        <i class="fas fa-user-circle"></i>
-                    </span>
-                    <li><a href="#" text-decoration: none;>Min side</a></li>
-                    
-                </button>
-                
-
+                <li class="opprettkonto"><a href="#">Opprett en konto</a></li>
+                <li>
+                    <a href="#" class="min-side-button">
+                        <span class="icon">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                        Min side
+                    </a>
+                </li>
+                <li class="account"><i class="fas fa-bars"></i></li>
+                <li class="burgermeny"><i class="fas fa-user-circle"></i></li>
             </ul>
         </nav>
-        <nav>
+        <nav class="begge">
             <ul class="nav-menu2">
-                <img src="https://github.com/ackarlse/Konte-web/blob/main/img/fav.png?raw=true" alt="fly-logo" width="50px">
+                <li><a href="#"></a></li>
 
                 <li><a href="#tips" style="color: black; text-decoration: none;">Tips og inspirasjon</a></li>
                 <li><a href="#hotell" style="color: black; text-decoration: none;">Hotell</a></li>
                 <li><a href="#fly" style="color: black; text-decoration: none;">Fly</a></li>
                 <li><a href="#kontakt" style="color: black; text-decoration: none;">Kontakt</a></li>
             </ul>
+            <ul class="fly">
+                <li>
+                    <img src="https://github.com/ackarlse/Konte-web/blob/main/img/fav.png?raw=true" alt="fly-logo" width="50">
+            </li>
+            </ul>
+            <style>
+                li {
+                    list-style: none; 
+                }
+            </style>
         </nav>
+
         
     </header>
     <main>
-        <section class="beach"><img src="img/beach.png"></section>
+        <section class="beach"><img src="https://github.com/ackarlse/Konte-web/blob/main/img/sea-4768869_1920.jpg?raw=true" alt="strand-bilde"></section>
+        <section class="search-bar-container">
+            <section class="tabs">
+                <div class="active">Fly + Hotell</div>
+                <div>Fly</div>
+                <div>Storby</div>
+                <div>Ski</div>
+                <div>Kombinasjonsreiser</div>
+            </section>
+            
+        <section class="nede">
+
+            <select>
+                <option value="fra">Fra</option>
+                <option>Oslo Lufthavn</option>
+                <option>Bergen Lufthavn</option>
+            </select>
+        
+    
+            <select>
+                <option value="til"></option>
+                <option>Til</option>
+                <option>Albania</option>
+                <option>Spania</option>
+            </select>
+    
+            <select>
+                <option value="reiselengde"></option>
+                <option>Reiselengde</option>
+                <option>Mindre enn 1 uke</option>
+                <option>1-2 uker</option>
+            </select>
+        
+    
+            <input type="date">
+    
+            <input type="number" placeholder="Antall reisende" value="2" min="1">
+    
+            <button class="search-button">Søk</button>
+        </section>
+    </section>
+        <section class="offer-container">
+            <img src="https://github.com/ackarlse/Konte-web/blob/main/img/holiday-2733322_1280.jpg?raw=true" alt="Background Image">
+            <section class="overlay">
+                <h1>Bestill sommerens beste uke</h1>
+                <p>Fly + hotell, 7 dager</p>
+                <section class="price">Fra 3 298,-</section>
+            </section>
+            <button class="cta-button">Bestill i dag</button>
+        </section>
+        
     </main> 
     </body>
     </html>

@@ -1,98 +1,371 @@
 
+
+
+.nav-menu2{
+        visibility: hidden;
+        display: none;
+    }
+    .nav-menu {
+        display: grid;
+        grid-template-columns: 2fr auto auto auto auto auto;
+        width: 100%; 
+        box-sizing: border-box;
+        overflow-x: hidden; 
+        list-style: none;
+        
+       
+    }
+    .opprettkonto,
+.min-side-button {
+    visibility: hidden;
+    display: none;
+}
+.search-bar{
+    margin-right: 20px;
+    font-size: 25px;
+    
+}
+.burgermeny{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-right: 4px;
+}
+.beach img {
+    width: 100%; 
+    padding: 0%;
+    margin-top: -14px;
+}
+.fly {
+    margin-top: -52px;
+  margin-left: -28px;
+  
+
+}
+.account{
+    font-size: 25px;
+}
+-----------------------------------------------------
 body {
-    width: 115%;
-    max-width: 1400px;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
 }
 
-ul {
-    list-style: none;
-}
-
-
-
-.nav-menu {
-    display: flex; 
-    gap: 20px; 
-    justify-content: flex-end;
-    align-items: center; 
-}
-
-.nav-menu2 {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto auto;
-    align-items: center;
-    padding: 10px 10px;
+.search-bar-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     gap: 20px;
+    position: absolute;
+   
+   top: 98px;
+  display: grid;
+  
+  right: 25px;
+  left: 25px;
+}
+.search-bar-container .nede{
+    display: flex;
+    flex-direction: column;
+}
+.search-bar-container .nede select {
+    
+        font-size: 16px;
+        padding: 8px 10px;
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        background-color: #fff; 
+        appearance: none; 
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23666'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 12px 12px;
+      
+
 }
 
-.nav-menu2 img {
-    grid-column: 1;
-    margin-right: 20px;
+
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 10px;
 }
 
-.nav-menu li,
-.nav-menu2 li {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: black;
+.tabs div {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-a {
+.tabs div.active {
     color: #0077b6;
-    text-decoration: none;
-    font-weight: 500;
+    border-bottom: 2px solid #0077b6;
 }
 
-a:hover {
-    text-decoration: underline;
+.form-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
 }
 
-.search-bar {
-    font-family: Arial, sans-serif;
+.form-section select,
+.form-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 14px;
 }
 
-.min-side-button {
-    display: inline-flex; 
-    align-items: center; 
-    padding: 8px 15px; 
-    font-family: Arial, sans-serif;
-    font-size: 16px; 
-    color: #0077b6; 
-    border: 2px solid #0077b6; 
-    border-radius: 25px; 
-    background-color: transparent; 
-    font-weight: 500; 
-    cursor: pointer; 
-    gap: 8px; 
-    transition: all 0.3s ease; 
+.search-button {
+    grid-column: span 1;
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.opprettkonto {
-    display: inline-flex; 
-    align-items: center; 
-    padding: 8px 15px; 
-    font-family: Arial, sans-serif;
-    font-size: 16px; 
-    color: #0077b6; 
-    border: 2px solid #0077b6; 
-    border-radius: 25px; 
-    background-color: transparent; 
-    font-weight: 500; 
-    cursor: pointer; 
-    gap: 8px; 
-    transition: all 0.3s ease; 
+.search-button:hover {
+    background-color: #e0a800;
+}
+-------------------------------------------
+.offer-container {
+    position: relative;
+    max-width: 900px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.banner {
-    background-position: center; 
-    height: 100%; 
+.offer-container img {
     width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.beach img {
-    width: 100%; 
-    max-width: 1400px; 
+.overlay {
+    position: absolute;
+  bottom: 180px;
+  right: 50px;
+  background-color: #52d3f0;
+  color: black;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 60%;
+  height: 15%;
+}
+
+
+.overlay h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.overlay .price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cta-button {
+    position: absolute;
+  bottom: 132px;
+  right: 50px;
+  background-color: #ffc107;
+  color: black;
+  padding: 13px 13px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    body {
+        width: 100%;
+        
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    
+    
+    .nav-menu {
+        display: grid;
+      grid-auto-flow: column; 
+      gap: 20px; 
+    justify-content: end; 
+    align-items: center; 
+    margin-right: -20px; 
+     visibility: visible;     
+    }
+    
+    .nav-menu2 {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto;
+        align-items: center;
+        padding: 10px 10px;
+        gap: 20px;
+        margin-right: 4px;
+        visibility: visible;
+    }
+    
+    .nav-menu2 img {
+        grid-column: 1;
+        margin-right: 0px;
+    }
+    
+    .nav-menu li,
+    .nav-menu2 li {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: black;
+    }
+    
+    a {
+        color: #0077b6;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .search-bar {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+    
+    .min-side-button {
+        display: inline-grid;
+align-items: center; 
+justify-content: center; 
+padding: 8px 15px;
+font-family: Arial, sans-serif; 
+font-size: 16px;
+color: #0077b6; 
+border: 2px solid #0077b6; 
+border-radius: 25px; 
+background-color: transparent; 
+font-weight: 500; 
+cursor: pointer; 
+gap: 8px; 
+transition: all 0.3s ease; 
+
+    }
+    
+    .opprettkonto {
+        display: inline-grid; 
+align-items: center;
+justify-content: center; 
+padding: 8px 15px; 
+font-family: Arial, sans-serif; 
+font-size: 16px; 
+color: #0077b6;
+border: 2px solid #0077b6; 
+border-radius: 25px; 
+background-color: transparent; 
+font-weight: 500; 
+cursor: pointer;
+gap: 8px;
+transition: all 0.3s ease; 
+visibility: visible; 
+
+    }
+    .min-side-button {
+        visibility: visible;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .banner {
+        background-position: center; 
+        height: 100%; 
+        width: 100%;
+    }
+    
+    .beach img {
+        width: 100%; 
+       
+        
+    }
+    .burgermeny {
+        visibility: hidden;
+    }
+    .fly {
+        margin-top: -70px;
+    }
+    .search-bar-container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 20px;
+        position: relative;
+      top: -980px;
+    }
+    .search-bar-container .nede{
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+       
+       
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        position: relative;
+    
+    }
+    .account{
+        display: none;
+    }
+
+
 }
